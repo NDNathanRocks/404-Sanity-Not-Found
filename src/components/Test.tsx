@@ -1,4 +1,4 @@
-import { useState, useEffect, act } from 'react';
+import { useState, useEffect } from 'react';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import laptopImg from '../assets/img/laptop.png';
@@ -25,13 +25,12 @@ import BarPuzzle from './puzzles/BarPuzzle';
 function Test() {
   const [idx, setIdx] = useState(0);
   const [mainTimer, setMainTimer] = useState(0);
-  const [lightTimer, setLightTimer] = useState(0);
+  const [ , setLightTimer] = useState(0);
   const pictures = [lightButtonUnpressed, lightButtonPressed];
     const [ghostPosition, setGhostPosition] = useState(0);
     const [gameOver, setGameOver] = useState(false);
     const [gameWin, setGameWin] = useState(false);
     const [volume, setVolume] = useState(1);
-    const [notifyUser, setNotifyUser] = useState(false);
     
   useEffect(() => {
     const interval = setInterval(() => {

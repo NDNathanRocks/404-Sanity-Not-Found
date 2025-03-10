@@ -1,9 +1,6 @@
 import Logo from "../../assets/img/google.png";
-import { useState } from 'react';
-
 
 const MenuPuzzle = ({ puzzles, onGoToPuzzle }: { puzzles: any[], onGoToPuzzle: (i: number) => void }) => {
-  const [volume, setVolume] = useState(1);
   return (
     <div className="flex flex-col items-center w-full my-8">
       {/* Logo and Input on the same row */}

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Logo from '../../assets/img/google.png';
 
 const ThirdPuzzle =  ({ onReturnToMenu, onSetPuzzleStatus }: { onReturnToMenu: () => void, onSetPuzzleStatus: (index: number, status: boolean) => void })  => {
   const [userAnswer, setUserAnswer] = useState('');
-  const [message, setMessage] = useState('Solve the sequence and find the next number.');
+  const [message, ] = useState('Solve the sequence and find the next number.');
   const [error, setError] = useState('');
 
   // Sequence puzzle: 2, 5, 10, 17, 26 (Next number is 37)

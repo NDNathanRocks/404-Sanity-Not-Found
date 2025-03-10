@@ -2,7 +2,6 @@ import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Test.css';
 import laptopImg from '../assets/img/laptop.png';
-import MainPuzzle from './puzzles/MainPuzzle';
 
 function MainLayout() {
   return (

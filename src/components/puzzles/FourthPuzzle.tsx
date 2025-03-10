@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Logo from '../../assets/img/Amazon-Logo.png';
 import Light from '../../assets/img/lb.png';
 import Prime from '../../assets/img/prime.jfif';

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Logo from '../../assets/img/google.png';
 
 const StartPage = ({
@@ -30,7 +30,7 @@ const StartPage = ({
     }
   }, [puzzles, randomNumber]); 
 
-  const handleInput = (e: React.FormEvent<HTMLInputElement>) => {
+  const handleInput = () => {
     if (index < startMessage.length) {
       setMessage((prev) => prev + startMessage[index]);
       setIndex(index + 1);
